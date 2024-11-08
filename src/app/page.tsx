@@ -20,7 +20,7 @@ export default function Resume() {
   return (
     <div className="sm:py-8 bg-primary/10">
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-12 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-12 gap-0 sm:gap-4">
           <div className="sm:col-span-4 lg:col-span-3">
             <Card className="p-6">
               <div className="flex justify-center">
@@ -86,7 +86,7 @@ export default function Resume() {
               </div>
               <Separator className="my-4" />
               <h2 className="text-lg font-semibold mb-2">Links</h2>
-              <div className="space-y-2">
+              <div className="space-y-2 overflow-hidden">
                 {resume.links.map((href, i) => (
                   <div key={i} className="flex items-center gap-2">
                     <LinkIcon className="h-4 w-4" />
