@@ -145,7 +145,7 @@ export const resume: ResumeOptions = {
     },
   ],
   links: [
-    "https://www.andrewgbliss.com",
+    "https://www.blisscode.dev",
     "https://www.github.com/andrewgbliss",
     "https://www.linkedin.com/in/andrewgbliss/",
   ],

@@ -15,6 +15,8 @@ import {
   SchoolIcon,
 } from "lucide-react";
 import { ModeToggle } from "@/components/ui/dark-mode-toggle";
+import { Facebook, Twitter } from "lucide-react";
+import { website } from "@/lib/website";
 
 export default function Resume() {
   return (
@@ -100,6 +102,26 @@ export default function Resume() {
                     </a>
                   </div>
                 ))}
+              </div>
+              <Separator className="my-4" />
+              <h2 className="text-lg font-semibold mb-2">Share</h2>
+              <div className="flex gap-2">
+                <a
+                  href={`https://www.facebook.com/sharer/sharer.php?u=${website.url}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#1877F2]"
+                >
+                  <Facebook size={24} />
+                </a>
+                <a
+                  href={`https://twitter.com/intent/tweet?url=${website.url}&text=Check%20this%20out!`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#1877F2]"
+                >
+                  <Twitter size={24} />
+                </a>
               </div>
             </Card>
           </div>
