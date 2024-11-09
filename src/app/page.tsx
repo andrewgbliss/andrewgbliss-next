@@ -8,7 +8,6 @@ import { Badge } from "@/components/ui/badge";
 import {
   HomeIcon,
   BookIcon,
-  PhoneIcon,
   CalendarIcon,
   LinkIcon,
   CircleIcon,
