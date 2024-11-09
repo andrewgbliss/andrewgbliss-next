@@ -65,12 +65,6 @@ export default function Resume() {
                     {resume.email}
                   </span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <PhoneIcon className="h-4 w-4" />
-                  <span className="text-sm text-muted-foreground">
-                    {resume.phone}
-                  </span>
-                </div>
               </div>
               <Separator className="my-4" />
               <h2 className="text-lg font-semibold mb-2">Education</h2>
