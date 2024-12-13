@@ -129,7 +129,7 @@ export default function Resume() {
                   <BskyIcon height={24} />
                 </a>
               </div>
-              <div className="flex justify-center">
+              <div className="flex justify-center p-5">
                 <div className="fade-up w-fit rounded-lg bg-white p-5">
                   <QRCodeSVG value={website.url} size={128} />
                 </div>
