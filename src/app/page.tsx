@@ -16,6 +16,8 @@ import {
 import { ModeToggle } from "@/components/ui/dark-mode-toggle";
 import { Facebook, Twitter } from "lucide-react";
 import { website } from "@/lib/website";
+import { QRCodeSVG } from "qrcode.react";
+import { BskyIcon } from "./_components/BskyIcon";
 
 export default function Resume() {
   return (
@@ -115,6 +117,22 @@ export default function Resume() {
                 >
                   <Twitter size={24} />
                 </a>
+                <a
+                  href={`https://bsky.app/intent/compose?text=${encodeURIComponent(
+                    `${resume.name} - ${website.url}`
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#1877F2]"
+                  title="Share on Bluesky"
+                >
+                  <BskyIcon height={24} />
+                </a>
+              </div>
+              <div className="flex justify-center">
+                <div className="fade-up w-fit rounded-lg bg-white p-5">
+                  <QRCodeSVG value={website.url} size={128} />
+                </div>
               </div>
             </Card>
           </div>
