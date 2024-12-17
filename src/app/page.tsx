@@ -5,6 +5,7 @@ import { HoverLinks } from "./_components/HoverLinks";
 export const metadata: Metadata = {
   title: website.name,
   description: website.description,
+  themeColor: "#000000",
   icons: {
     icon: "favicon.ico",
   },
