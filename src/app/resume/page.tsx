@@ -1,6 +1,8 @@
 import { website } from "@/lib/website";
 import { Metadata } from "next";
 import { Resume } from "../_components/Resume";
+import { ThemeProvider } from "@/components/theme-provider";
+
 export const metadata: Metadata = {
   title: `${website.name} - Resume`,
   description: `${website.name} - Resume`,
@@ -31,10 +33,17 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <div className="p-5 min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-slate-700 to-slate-900">
-      <div className="container mx-auto">
-        <Resume />
+    <ThemeProvider
+      attribute="class"
+      defaultTheme="system"
+      enableSystem
+      disableTransitionOnChange
+    >
+      <div className="p-5 min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-slate-700 to-slate-900">
+        <div className="container mx-auto">
+          <Resume />
+        </div>
       </div>
-    </div>
+    </ThemeProvider>
   );
 }

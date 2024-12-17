@@ -1,6 +1,6 @@
 import { website } from "@/lib/website";
 import { Metadata } from "next";
-import { BusinessCard } from "./_components/BusinessCard";
+import { HoverLinks } from "./_components/HoverLinks";
 
 export const metadata: Metadata = {
   title: website.name,
@@ -32,8 +32,8 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <div className="p-5 min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-slate-700 to-slate-900">
-      <BusinessCard />
+    <div className="p-5 min-h-screen w-full flex items-center justify-center bg-gradient-to-br from-slate-950 via-slate-800 to-slate-950">
+      <HoverLinks />
     </div>
   );
 }

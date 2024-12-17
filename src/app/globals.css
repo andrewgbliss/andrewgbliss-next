@@ -70,3 +70,7 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.hover-link {
+  @apply text-white hover:underline text-3xl sm:text-4xl text-center;
+}

@@ -129,7 +129,7 @@ export function Resume() {
           </div>
           <div className="flex justify-center p-5">
             <div className="fade-up w-fit rounded-lg bg-white p-5">
-              <QRCodeSVG value={website.url} size={128} />
+              <QRCodeSVG value={`${website.url}/resume`} size={128} />
             </div>
           </div>
         </Card>

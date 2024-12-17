@@ -7,5 +7,5 @@ export type Website = {
 export const website: Website = {
   name: "Andrew Bliss",
   url: "https://andrewgbliss.com",
-  description: "My resume, work history, and personal links",
+  description: "Writing software together",
 };
