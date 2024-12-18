@@ -63,11 +63,8 @@ export function HoverLinks() {
           whileHover={{ scale: 1.1 }}
           transition={{ type: "spring", stiffness: 400, damping: 10 }}
         >
-          <Link
-            href="https://www.linkedin.com/in/andrewgbliss/"
-            className="hover-link"
-          >
-            LinkedIn
+          <Link href="/portfolio" className="hover-link">
+            Portfolio
           </Link>
         </motion.div>
         <motion.div
@@ -76,10 +73,10 @@ export function HoverLinks() {
           transition={{ type: "spring", stiffness: 400, damping: 10 }}
         >
           <Link
-            href="https://www.github.com/andrewgbliss"
+            href="https://www.linkedin.com/in/andrewgbliss/"
             className="hover-link"
           >
-            GitHub
+            LinkedIn
           </Link>
         </motion.div>
       </div>

@@ -18,6 +18,7 @@ import { Facebook, Twitter } from "lucide-react";
 import { website } from "@/lib/website";
 import { QRCodeSVG } from "qrcode.react";
 import { BskyIcon } from "@/app/_components/BskyIcon";
+import Link from "next/link";
 
 export function Resume() {
   return (
@@ -31,9 +32,11 @@ export function Resume() {
               className="rounded w-64"
             />
           </div>
-          <h1 className="text-2xl font-bold text-center mt-4 mb-2">
-            {resume.name}
-          </h1>
+          <Link href="/">
+            <h1 className="text-2xl font-bold text-center mt-4 mb-2">
+              {resume.name}
+            </h1>
+          </Link>
           <p className="text-sm text-muted-foreground mb-4 text-center">
             {resume.bio}
           </p>

@@ -29,6 +29,10 @@ export const metadata: Metadata = {
       "https://storage.googleapis.com/blisscoder-0-public/andrewgbliss/img/andy.jpg",
     ],
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function Page() {

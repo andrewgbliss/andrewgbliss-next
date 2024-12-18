@@ -1,11 +1,14 @@
 import { website } from "@/lib/website";
-import { Metadata } from "next";
+import { Metadata, Viewport } from "next";
 import { HoverLinks } from "./_components/HoverLinks";
+
+export const viewport: Viewport = {
+  themeColor: "#000000",
+};
 
 export const metadata: Metadata = {
   title: website.name,
   description: website.description,
-  themeColor: "#000000",
   icons: {
     icon: "favicon.ico",
   },
@@ -28,6 +31,10 @@ export const metadata: Metadata = {
     images: [
       "https://storage.googleapis.com/blisscoder-0-public/andrewgbliss/img/andy.jpg",
     ],
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
