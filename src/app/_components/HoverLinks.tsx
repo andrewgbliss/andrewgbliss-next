@@ -80,6 +80,19 @@ export function HoverLinks() {
           </Link>
         </motion.div>
       </div>
+      <motion.div variants={item} className="text-center text-sm text-white">
+        <p>
+          Website powered by{" "}
+          <a
+            href="https://blisscode.dev"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:underline"
+          >
+            BlissCode.dev
+          </a>
+        </p>
+      </motion.div>
     </motion.div>
   );
 }
