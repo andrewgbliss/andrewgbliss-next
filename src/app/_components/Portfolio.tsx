@@ -40,6 +40,27 @@ const projects = [
       "https://storage.googleapis.com/blisscoder-0-public/andrewgbliss/img/portfolio-zerofall.png",
     url: "https://www.zerofallstudios.com",
   },
+  {
+    title: "Music Profile",
+    description: "Music profile page for Andy B Mixin.",
+    image:
+      "https://storage.googleapis.com/blisscoder-0-public/andrewgbliss/img/portfolio-music-page.png",
+    url: "https://www.dilutedscience.com/artists/andy-b-mixin",
+  },
+  {
+    title: "Scheduler",
+    description: "Scheduler for website consulting.",
+    image:
+      "https://storage.googleapis.com/blisscoder-0-public/andrewgbliss/img/portfolio-scheduler.png",
+    url: "https://www.blisscode.dev/schedule",
+  },
+  {
+    title: "Questionnaire",
+    description: "Questionnaire for website consulting.",
+    image:
+      "https://storage.googleapis.com/blisscoder-0-public/andrewgbliss/img/portfolio-questionnaire.png",
+    url: "https://www.blisscode.dev/questionnaire/website-consulting",
+  },
 ];
 
 export default function PortfolioPage() {
@@ -67,7 +88,11 @@ export default function PortfolioPage() {
         >
           My Portfolio
         </motion.h1>
-        <motion.div variants={item}>
+        <motion.div
+          variants={item}
+          whileHover={{ scale: 1.05 }}
+          transition={{ type: "spring", stiffness: 400, damping: 10 }}
+        >
           <Link href="/" className="text-white text-xl hover:underline">
             Back
           </Link>
@@ -79,7 +104,7 @@ export default function PortfolioPage() {
               variants={item}
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
-              className="rounded-lg overflow-hidden shadow-xl"
+              className="overflow-hidden text-white hover:underline"
             >
               <Link
                 href={project.url}
@@ -91,11 +116,9 @@ export default function PortfolioPage() {
                   alt={project.title}
                   className="w-full h-48 object-cover object-top"
                 />
-                <div className="p-6">
-                  <h3 className="text-2xl font-bold text-white mb-2">
-                    {project.title}
-                  </h3>
-                  <p className="text-gray-300">{project.description}</p>
+                <div className="py-4">
+                  <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
+                  <p>{project.description}</p>
                 </div>
               </Link>
             </motion.div>
